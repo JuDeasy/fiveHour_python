@@ -1,7 +1,3 @@
-# in statement
-from email import message
-
-
 a = [1, 2, 3]
 
 if 1 in a:
@@ -44,3 +40,23 @@ while treeHit < 10:
   print("You hit tree {treeHit} times".format(treeHit=treeHit))
   if treeHit == 10:
     print("You have done")
+
+# for statement
+test_list = ['one', 'two', 'three']
+for i in test_list:
+  print(i)
+
+# range function (아래 1이상 11미만)
+sum = 0
+for i in range(1, 11):
+  sum = sum + i
+
+# 구구단
+for i in range(1, 10):
+  for j in range(1, 10):
+    print(i*j, end=" ")
+  print('')
+
+# List Comprehension(리스트 내포)
+result = [num * 3 for num in a]
+print(result)
